@@ -23,5 +23,6 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        echo ${super_secret}
+        echo ${super_secret} >secret.txt
+        cat secret.txt
  
