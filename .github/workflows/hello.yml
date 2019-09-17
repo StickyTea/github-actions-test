@@ -18,6 +18,8 @@ jobs:
         last_name: Ito
       run: echo Hello, world! from ${first_name} ${middle_name} ${last_name}!
     - name: Run a multi-line script
+      with:
+        super_secret: ${{ secrets.SuperSecret }}
       env:
         super_secret: ${{ secrets.SuperSecret }}
       run: |
